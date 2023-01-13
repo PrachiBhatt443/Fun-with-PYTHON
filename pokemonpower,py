@@ -1,0 +1,22 @@
+"""You are a Pokémon trainer. Each Pokémon has its own power, described by a positive integer value. As you travel, you watch Pokémon and you catch each of them. After each catch, you have to display maximum and minimum powers of Pokémon caught so far"""
+
+powers = ["3", "8", "9", "7"]
+i=0
+def pokemon(powers):
+    print("Previous pokemon powers:",powers)
+    l=input("Enter number of powers of your new pokemon:")
+    powers.append(l)
+    mini = min(powers)
+    maxi = max(powers)
+    print("Minimum Powers:",mini,"\n Maximum Powers:",maxi)
+    z=input("Did you catch another?").lower()
+    if z=="yes":
+        pokemon(powers)
+    else:
+        print("Go for more")
+    return 0
+
+pokemon(powers)
+
+
+
