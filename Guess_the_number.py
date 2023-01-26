@@ -17,4 +17,4 @@ while num_of_guess<5:
 if guess!=num:
     print("You can't guess it")
     print("Answer is",num)
-    
+    print ("Thanks for playing ")
